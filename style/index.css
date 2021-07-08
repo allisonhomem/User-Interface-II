@@ -1,1 +1,113 @@
-/* Add CSS styling here */
+*{
+    text-align: center;
+    font-family: 'Zen Loop', monospace;
+    font-size: 25px;
+    background-color: #141f1f;
+    color: #e0ebeb;
+}
+
+header {
+    margin: 1% 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: 4px 4px #334d4d;
+    letter-spacing: 15px;
+    word-spacing: 20px;
+    font-size: 2rem;
+}
+
+nav{
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 1%;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+nav a, #email {
+    align-items: center;
+    letter-spacing: 2px;
+    border: 1px solid #e0ebeb;
+    
+}
+
+nav a:hover, #email:hover {
+    background-color: #e0ebeb;
+    font-weight: bolder;
+    color: #334d4d;
+    text-shadow: 1px 1px #141f1f;
+}
+
+.intro {
+    padding: 0 0 4% 0;
+}
+
+.intro h2 {
+    font-family: 'Fuggles', cursive;
+    font-size: 2rem;
+    word-spacing: 5px;
+    text-shadow: 2px 2px #334d4d;
+    border: 1px #e0ebeb;
+    border-style: none none solid none;
+}
+
+.intro p {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.emphasize {
+    font-weight: bolder;
+    text-shadow: 1px 1px #334d4d;
+}
+
+.copyright {
+    font-size: .75rem;
+}
+
+#main_photo {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 100% 35%;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: flex-start;
+}
+
+.gallery img {
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    object-position: 15% 50%;
+    opacity: .5;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+.gallery p {
+    align-self: center;
+    padding: 10px;
+}
+
+footer {
+    padding: 2% 0 0 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+}
