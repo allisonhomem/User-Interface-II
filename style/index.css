@@ -1,9 +1,14 @@
 *{
+    box-sizing: border-box;
+    max-width: 100%;
+    color: #d1e0e0;
+}
+
+html {
+    font-size: 62.5%;
     text-align: center;
     font-family: 'Zen Loop', monospace;
-    font-size: 62.5%;
     background-color: #141f1f;
-    color: #e0ebeb;
 }
 
 header {
@@ -12,12 +17,11 @@ header {
 
 h1 {
     text-transform: uppercase;
-    text-shadow: 4px 4px #334d4d;
+    text-shadow: 3px 3px #334d4d;
     letter-spacing: 15px;
     word-spacing: 20px;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
-
 
 nav, .gallery {
     display: flex;
@@ -38,12 +42,12 @@ a {
 .navbuttons, #email {
     align-items: center;
     letter-spacing: 2px;
-    border: 1px solid #e0ebeb;
+    border: 1px solid #d1e0e0;
     
 }
 
 .navbuttons:hover, #email:hover {
-    background-color: #e0ebeb;
+    background-color: #d1e0e0;
     font-weight: bolder;
     color: #334d4d;
     text-shadow: 1px 1px #141f1f;
@@ -58,7 +62,7 @@ h2 {
     font-size: 4rem;
     word-spacing: 5px;
     text-shadow: 2px 2px #334d4d;
-    border: 1px #e0ebeb;
+    border: 1px #d1e0e0;
     border-style: none none solid none;
 }
 
@@ -73,8 +77,6 @@ h2 {
     font-size: 2.1rem;
     text-shadow: 1px 1px #334d4d;
 }
-
-
 
 #main_photo {
     width: 100%;
@@ -101,9 +103,9 @@ h2 {
     opacity: 1;
 }
 
-.gallery p {
+.gallery_comment {
     align-self: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 footer {
@@ -119,6 +121,15 @@ footer {
 @media (max-width: 800px) {
     #main_photo {
         height: 400px;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 50%;
     }
 }
 
