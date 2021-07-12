@@ -31,14 +31,14 @@ a {
     align-self: center;
 }
 
-nav a, #email {
+.navbuttons, #email {
     align-items: center;
     letter-spacing: 2px;
     border: 1px solid #e0ebeb;
     
 }
 
-nav a:hover, #email:hover {
+.navbuttons:hover, #email:hover {
     background-color: #e0ebeb;
     font-weight: bolder;
     color: #334d4d;
@@ -111,3 +111,5 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+
