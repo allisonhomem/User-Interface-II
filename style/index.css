@@ -1,14 +1,19 @@
 *{
     box-sizing: border-box;
     max-width: 100%;
+    max-height: 100%;
     color: #d1e0e0;
 }
 
 html {
     font-size: 62.5%;
+}
+
+body {
     text-align: center;
     font-family: 'Zen Loop', monospace;
     background-color: #141f1f;
+    font-size: 1.8rem;
 }
 
 header {
@@ -54,7 +59,7 @@ a {
 }
 
 .intro {
-    padding: 0 0 4% 0;
+    padding: 0 2% 4% 2%;
 }
 
 h2 {
@@ -78,16 +83,20 @@ h2 {
     text-shadow: 1px 1px #334d4d;
 }
 
+.copyright {
+    font-size: 1rem;
+}
+
 #main_photo {
     width: 100%;
-    height: 500px;
+    height: 70vh;
     object-fit: cover;
     object-position: 100% 35%;
 }
 
 .gallery {
     width: 100%;
-    height: 500px;
+    height: 70vh;
     justify-content: flex-start;
 }
 
@@ -108,6 +117,10 @@ h2 {
     padding: 1rem;
 }
 
+.gallery_comment p {
+    font-size: 3rem;
+}
+
 footer {
     padding: 2% 0 0 0;
 }
@@ -120,7 +133,7 @@ footer {
 
 @media (max-width: 800px) {
     #main_photo {
-        height: 400px;
+        height: 60vh;
     }
 
     .gallery {
@@ -130,6 +143,7 @@ footer {
 
     .gallery img {
         width: 50%;
+        
     }
 }
 
@@ -152,6 +166,6 @@ footer {
     }
 
     #main_photo {
-        height: 300px;
+        height: 40vh; 
     }
 }
