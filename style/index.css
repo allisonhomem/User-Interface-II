@@ -1,7 +1,7 @@
 *{
     text-align: center;
     font-family: 'Zen Loop', monospace;
-    font-size: 25px;
+    font-size: 62.5%;
     background-color: #141f1f;
     color: #e0ebeb;
 }
@@ -15,11 +15,15 @@ h1 {
     text-shadow: 4px 4px #334d4d;
     letter-spacing: 15px;
     word-spacing: 20px;
-    font-size: 2rem;
+    font-size: 4rem;
+}
+
+
+nav, .gallery {
+    display: flex;
 }
 
 nav{
-    display: flex;
     padding: 1%;
     justify-content: center;
 }
@@ -27,7 +31,7 @@ nav{
 a {
     text-decoration: none;
     padding: 0 1%;
-    font-size: 1.5rem;
+    font-size: 3rem;
     align-self: center;
 }
 
@@ -49,9 +53,9 @@ a {
     padding: 0 0 4% 0;
 }
 
-.intro h2 {
+h2 {
     font-family: 'Fuggles', cursive;
-    font-size: 2rem;
+    font-size: 4rem;
     word-spacing: 5px;
     text-shadow: 2px 2px #334d4d;
     border: 1px #e0ebeb;
@@ -61,16 +65,16 @@ a {
 .intro p {
     letter-spacing: 3px;
     word-spacing: 5px;
+    font-size: 2rem;
 }
 
 .emphasize {
     font-weight: bolder;
+    font-size: 2.1rem;
     text-shadow: 1px 1px #334d4d;
 }
 
-.copyright {
-    font-size: .75rem;
-}
+
 
 #main_photo {
     width: 100%;
@@ -80,7 +84,6 @@ a {
 }
 
 .gallery {
-    display: flex;
     width: 100%;
     height: 500px;
     justify-content: flex-start;
@@ -113,3 +116,31 @@ footer {
 }
 
 
+@media (max-width: 800px) {
+    #main_photo {
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1, h2 {
+        font-size: 3.25rem;
+        word-spacing: 50%;
+    }
+    
+    header nav {
+        flex-direction: column;
+    }
+
+    .navbuttons {
+        width: 150px;
+    }
+
+    a {
+        font-size: 2.5rem;
+    }
+
+    #main_photo {
+        height: 300px;
+    }
+}
