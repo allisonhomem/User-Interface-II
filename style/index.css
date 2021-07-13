@@ -1,1 +1,288 @@
-/* Add CSS styling here */
+/* CSS Resets */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Styles start here */
+
+/* Entire Page Stylings */
+
+*{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #d1e0e0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 200vh;
+}
+
+body {
+    text-align: center;
+    font-family: 'Zen Loop', monospace;
+    background-color: #141f1f;
+    font-size: 1.8rem; 
+}
+
+.all_content, nav, .gallery, .shoe, .socials {
+    display: flex;
+}
+
+.all_content {
+    flex-direction: column; 
+    height: max-content;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    margin: 3% 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-shadow: .3rem .3rem #334d4d;
+    letter-spacing: 1.5rem;
+    word-spacing: 2rem;
+    font-size: 3.5rem;
+}
+
+
+
+nav{
+    margin: 2% 0;
+    padding: 1%;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 1%;
+    font-size: 3rem;
+    align-self: center;
+}
+
+.navbuttons, #email {
+    align-items: center;
+    letter-spacing: .4rem;
+    border: 1px solid #d1e0e0;
+    
+}
+
+.navbuttons:hover, #email:hover {
+    background-color: #d1e0e0;
+    font-weight: bolder;
+    color: #334d4d;
+    text-shadow: 1px 1px #141f1f;
+}
+
+/* Main Content */
+
+.intro {
+    padding: 0 2% 4% 2%;
+}
+
+h2 {
+    font-family: 'Fuggles', cursive;
+    font-size: 4rem;
+    word-spacing: 1rem;
+    text-shadow: .2rem .2rem #334d4d;
+    border: 1px #d1e0e0;
+    border-style: none none solid none;
+}
+
+.intro p {
+    letter-spacing: .3rem;
+    word-spacing: .5rem;
+    font-size: 2rem;
+    padding: 4% 0 0 0;
+}
+
+.emphasize {
+    font-weight: bolder;
+    font-size: 2.1rem;
+    text-shadow: 1px 1px #334d4d;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+#main_photo {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: 100% 35%;
+}
+
+.gallery {
+    width: 100%;
+    height: 70vh;
+    justify-content: flex-start;
+}
+
+.gallery img {
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    object-position: 15% 50%;
+    opacity: .5;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+.gallery_comment {
+    align-self: center;
+    padding: 0 3%;
+    width: 100%;
+}
+
+.gallery_comment p {
+    font-size: 2.5rem;
+}
+
+/* Footer */ 
+
+footer {
+    border-top: 1px solid #d1e0e0;
+    padding: 2% 0;
+    height: 15vh;
+    width: 100%;
+}
+
+.shoe {
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.socials {
+    justify-content: flex-end;
+}
+
+.socials p {
+    font-size: 2rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    #main_photo {
+        height: 60vh;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 120vh;
+    }
+
+    .gallery img {
+        width: 50%;
+        height: 50vh;
+    }
+
+    .gallery_comment {
+        padding: 7% 4%;
+        height: 20vh;
+    }  
+    
+    .shoe {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .socials {
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    h1, h2 {
+        font-size: 3.25rem;
+        word-spacing: 50%;
+    }
+    
+    header nav {
+        flex-direction: column;
+    }
+
+    .navbuttons {
+        width: 150px;
+    }
+
+    a {
+        font-size: 2.5rem;
+        padding: 1%;
+    }
+
+    #main_photo {
+        height: 40vh; 
+    }
+
+    .gallery {
+        height: 115vh;
+    }
+
+    .gallery img {
+        height: 50vh;
+    }
+
+    .gallery_comment {
+        height: 15vh;
+    }
+
+    .gallery_comment p {
+        font-size: 2rem;
+    }
+}
